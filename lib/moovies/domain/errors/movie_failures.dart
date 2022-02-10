@@ -13,8 +13,8 @@ abstract class NoInternetConnection extends Failure {
       : super(errorMessage: 'No internet connection', exception: exception);
 }
 
-class MovieNowPlayingNoInternetConnection extends NoInternetConnection {
-  MovieNowPlayingNoInternetConnection(
+class MoviePopularNoInternetConnection extends NoInternetConnection {
+  MoviePopularNoInternetConnection(
       {required String errorMessage, required exception})
       : super(errorMessage: 'No internet connection', exception: exception);
 }
