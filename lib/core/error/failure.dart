@@ -1,6 +1,7 @@
 abstract class Failure {
   final String errorMessage;
   final dynamic exception;
+
   Failure({
     required this.errorMessage,
     required this.exception,

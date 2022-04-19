@@ -16,7 +16,7 @@ class MovieDataSourceImpl implements MovieDataSource {
   Future<List<Movie>> getMoviesPopular() async {
     try {
       final response = await dio.get(
-        'movies/popular',
+        'movie/popular',
         queryParameters: {
           'api_key': ApiConstants.apiKey,
           'language': ApiConstants.language

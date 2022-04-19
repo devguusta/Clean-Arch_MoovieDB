@@ -2,6 +2,8 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:mooviedb/core/network/api/api_constants.dart';
 import 'package:mooviedb/core/network/api/dio_client.dart';
 
+import 'moovies/movies_module.dart';
+
 class AppModule extends Module {
   @override
   List<Bind> get binds => [
@@ -12,5 +14,10 @@ class AppModule extends Module {
       ];
 
   @override
-  final List<ModularRoute> routers = [];
+  final List<ModularRoute> routes = [
+    ModuleRoute(
+      Modular.initialRoute,
+      module: MovieModule(),
+    ),
+  ];
 }
